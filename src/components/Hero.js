@@ -6,6 +6,9 @@ import HTML from "../assets/html.svg";
 import CSS from "../assets/CSS.svg";
 import ReactJs from "../assets/React.svg";
 import Sc from "../assets/Sc.png";
+import Git from "../assets/git.svg";
+import Python from "../assets/Python.png";
+import Nodejs from "../assets/nodejs.png";
 
 const Hero = () => {
   const fadeLeft = {
@@ -78,6 +81,33 @@ const Hero = () => {
             dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0, transition: { duration: 2 } }}
+          />
+          <Image
+            src={Git}
+            alt="planet"
+            whileTap={{ scale: 0.5 }}
+            drag={true}
+            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0, transition: { duration: 2 } }}
+          />
+          <Image
+            src={Python}
+            alt="planet"
+            whileTap={{ scale: 0.5 }}
+            drag={true}
+            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 2 } }}
+          />
+          <Image
+            src={Nodejs}
+            alt="planet"
+            whileTap={{ scale: 0.5 }}
+            drag={true}
+            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 2 } }}
           />
         </Right>
       </Container>
@@ -156,8 +186,8 @@ const Right = styled.div`
     left: 50px;
   }
   ${Image}:nth-child(4) {
-    bottom: 340px;
-    right: 75px;
+    bottom: 350px;
+    right: 100px;
     max-width: 200px;
     max-height: 200px;
   }
@@ -165,5 +195,17 @@ const Right = styled.div`
     bottom: 250px;
     right: 330px;
     border: 2px solid black;
+  }
+  ${Image}:nth-child(6) {
+    bottom: 250px;
+    left: 260px;
+  }
+  ${Image}:nth-child(7) {
+    bottom: 250px;
+    left: 130px;
+  }
+  ${Image}:nth-child(8) {
+    top: 250px;
+    left: 150px;
   }
 `;
