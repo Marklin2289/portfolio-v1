@@ -23,7 +23,6 @@ const Container = styled.div`
   width: 100%;
   height: 60px;
   z-index: 20;
-  background: red;
 `;
 const Nav = styled.div`
   display: flex;

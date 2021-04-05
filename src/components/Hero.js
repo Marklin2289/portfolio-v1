@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import BgImg from "../assets/bg1.jpg";
 
 const Hero = () => {
   return (
@@ -19,7 +18,6 @@ const Hero = () => {
 export default Hero;
 
 const Section = styled.div`
-  background-image: url(${BgImg});
   height: 785px;
   display: block;
   background-repeat: no-repeat;
