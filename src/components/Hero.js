@@ -9,6 +9,8 @@ import Sc from "../assets/Sc.png";
 import Git from "../assets/git.svg";
 import Python from "../assets/Python.png";
 import Nodejs from "../assets/nodejs.png";
+import MongoDB from "../assets/mongoDB.png";
+import ExpressJS from "../assets/expressjs.svg";
 
 const Hero = () => {
   const fadeLeft = {
@@ -109,6 +111,24 @@ const Hero = () => {
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0, transition: { duration: 2 } }}
           />
+          <Image
+            src={MongoDB}
+            alt="planet"
+            whileTap={{ scale: 0.5 }}
+            drag={true}
+            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 2 } }}
+          />
+          <Image
+            src={ExpressJS}
+            alt="planet"
+            whileTap={{ scale: 0.5 }}
+            drag={true}
+            dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50 }}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0, transition: { duration: 2 } }}
+          />
         </Right>
       </Container>
     </Section>
@@ -160,8 +180,8 @@ const Image = styled(motion.img)`
   position: absolute;
   width: 100%;
   height: 100%;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 50px;
+  max-height: 50px;
   background: transparent;
 `;
 
@@ -207,5 +227,13 @@ const Right = styled.div`
   ${Image}:nth-child(8) {
     top: 250px;
     left: 150px;
+  }
+  ${Image}:nth-child(9) {
+    top: 400px;
+    left: 300px;
+  }
+  ${Image}:nth-child(10) {
+    top: 250px;
+    right: 0;
   }
 `;

@@ -1,19 +1,14 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import styled from "styled-components";
-// import BgImg from "./assets/bg1.jpg";
+import "./App.css";
 
 function App() {
   return (
-    <Container>
+    <div className="App">
       <Header />
       <Hero />
-    </Container>
+    </div>
   );
 }
 
 export default App;
-
-const Container = styled.section`
-  background: #fff;
-`;
