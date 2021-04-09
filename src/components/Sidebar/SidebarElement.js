@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
-import { Link as LinkR } from "react-router-dom";
+// import { Link as LinkR } from "react-router-dom";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
@@ -14,8 +14,8 @@ export const SidebarContainer = styled.aside`
   top: 0;
   left: 0;
   transition: 0.3s ease-in-out;
-  /* opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")}; */
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0%")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 export const Icon = styled.div`
   position: absolute;
@@ -40,7 +40,7 @@ export const SidebarMenu = styled.ul`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(6, 80px);
   }
 `;
 export const SidebarLink = styled(LinkS)`
@@ -53,6 +53,16 @@ export const SidebarLink = styled(LinkS)`
   transition: 0.2s ease-in-out;
   color: #fff;
   cursor: pointer;
+  animation: fadeIn ease 5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   &:hover {
     color: #01bf71;

@@ -1,14 +1,13 @@
-import Hero from "./components/Hero";
+// import Hero from "./Hero";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar/Sidebar";
+// import Navbar from "./components/Navbar";
+// import Sidebar from "./components/Sidebar/Sidebar";
+import Home from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <Navbar />
-      <Hero />
+      <Home />
     </div>
   );
 }
