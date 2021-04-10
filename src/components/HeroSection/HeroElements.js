@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import { motion } from "framer-motion";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -65,7 +66,7 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled(motion.h1)`
   color: #fff;
   font-size: 48px;
   text-align: center;
@@ -100,11 +101,12 @@ export const ImageContent = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 5px;
+  border: 2px solid #01bf71;
 
   @media screen and (max-width: 768px) {
     width: 18px;

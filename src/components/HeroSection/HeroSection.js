@@ -54,7 +54,7 @@ function HeroSection() {
         </ImageContent>
         <HeroBtnWrapper>
           <Button
-            to="signup"
+            to="about"
             smooth={true}
             duration={500}
             spy={true}
@@ -65,7 +65,7 @@ function HeroSection() {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
-            Contact Me {hover ? <ArrowForward /> : <ArrowRight />}
+            About Me {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
