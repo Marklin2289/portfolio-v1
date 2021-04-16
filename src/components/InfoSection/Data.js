@@ -5,9 +5,9 @@ import svg3 from "../../assets/svg-3.svg";
 export const homeObjOne = {
   id: "about",
   toId: "projects",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "About Me :",
   headline: "I love coding and learning.",
   description:
@@ -16,9 +16,9 @@ export const homeObjOne = {
   imgStart: false,
   img: svg1,
   alt: "Car",
-  dark: true,
-  primary: true,
-  darkText: false,
+  dark: false,
+  primary: false,
+  darkText: true,
 };
 
 export const homeObjTwo = {
@@ -46,14 +46,14 @@ export const homeObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Contact Me",
-  headline: "Feel free to reach out to me",
-  description: "Email : MarkLin2289@gmail.com",
-  buttonLabel: "Back to home",
-  imgStart: false,
+  buttonLabel: "Back to Home",
+  imgStart: true,
   img: svg3,
-  alt: "Papers",
+  alt: "EmailBox",
   dark: false,
   primary: false,
   darkText: true,
+  topLine: "Contact Me",
+  headline: "Feel free to reach out to me",
+  description: "Email : MarkLin2289@gmail.com",
 };
